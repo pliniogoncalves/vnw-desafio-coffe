@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items:center ;
+    justify-content:space-around;
+    height: 10vh;
+    border-bottom: solid 1px rgb(192, 186, 186);
+}
+
+figure{
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+h2#h2-make{
+    background-color: #FCA60F;
+    color: white;
+    text-align: center;
+    width: 15vw;
+    height: 4vh;
+}
+
+figure#redes-sociais{
+    width: 6vw;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-outer {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FCA60F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .circle-inner {
+    width: 4px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
