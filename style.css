@@ -17,7 +17,7 @@ header{
     border-bottom: solid 1px rgb(192, 186, 186);
 }
 
-figure{
+header figure{
     display: flex;
     justify-content: space-between;
     width: 12vw;
@@ -28,6 +28,12 @@ ul{
     justify-content: space-evenly;
     width: 30vw;
     list-style: none;
+    font-size: 20px;
+}
+
+h2#texto{
+    white-space: pre-line;
+    font-size: 45px;
 }
 
 main{
@@ -40,20 +46,27 @@ main{
 main section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 20vh;
+    justify-content: space-between;
+    height: 50vh;
 }
 
 h2#h2-make{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FCA60F;
     color: white;
+    width: 20vw;
+    height: 7vh;
+    font-size: 35px;
     text-align: center;
-    width: 15vw;
-    height: 4vh;
+    border-radius: 10px;
 }
 
 figure#redes-sociais{
-    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+    width: 8vw;
 }
 
 footer{
@@ -79,3 +92,61 @@ footer{
     border-radius: 50%;
     background-color: white;
 }
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 22vh;
+        border-bottom: solid 1px rgb(192, 186, 186);
+    }
+
+    header figure{
+        display: flex;
+        width: 42vw;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70vw;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100vw;
+    }
+
+    h2#h2-make{
+        background-color: #FCA60F;
+        color: white;
+        text-align: center;
+        width: 30vw;
+        height: 6vh;
+        font-size: 18px;
+    }
+
+    figure#redes-sociais{
+        display: flex;
+        justify-content: space-between;
+        width: 20vw;
+    }
+    
+    main figure#copo img{
+        display: none;  
+    }
+
+    footer{
+        display: none;
+    }
+  }
